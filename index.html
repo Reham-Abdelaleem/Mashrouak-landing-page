@@ -30,25 +30,25 @@
 <body>
 
   <!-- BACK TO TOP BUTTON -->
-  <button class="back-top position-fixed rounded-circle d-flex align-items-center justify-content-center" id="backTop" aria-label="Back to Top">
+  <button class="back-top position-fixed rounded-circle border-0 d-flex align-items-center justify-content-center" id="backTop" aria-label="Back to Top">
     <i class="bi bi-chevron-up" style="font-size:18px;font-weight:bold"></i>
   </button>
 
   <!-- NAVIGATION BAR -->
-  <nav id="navbar">
-    <div class="container">
-      <div class="nav-logo"><img src="images/logo.jpg" alt="Mashrouk"></div>
-      <ul class="nav-links m-0 p-0 unstyled-list">
-        <li><a href="#services"><i class="bi bi-stars"></i> خدماتنا</a></li>
-        <li><a href="#how"><i class="bi bi-diagram-3-fill"></i> كيف نعمل</a></li>
-        <li><a href="#portfolio"><i class="bi bi-grid-fill"></i> أعمالنا</a></li>
-        <li><a href="#pricing"><i class="bi bi-tags-fill"></i> الأسعار</a></li>
-        <li><a href="#testimonials"><i class="bi bi-chat-quote-fill"></i> آراء العملاء</a></li>
-        <li><a href="#faq"><i class="bi bi-question-circle-fill"></i> الأسئلة الشائعة</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope-fill"></i> تواصل معنا</a></li>
+  <nav id="navbar" class="position-fixed top-0 start-0 end-0 p-0">
+    <div class="container h-100 d-flex align-items-center justify-content-between">
+      <div class="nav-logo"><img src="images/logo.jpg" alt="Mashrouk" class="flex-shrink-0"></div>
+      <ul class="nav-links m-0 p-0 list-unstyled d-flex align-items-center flex-nowrap">
+        <li><a href="#services" class="text-decoration-none fw-semibold d-inline-flex align-items-center gap-2 position-relative"><i class="bi bi-stars"></i> خدماتنا</a></li>
+        <li><a href="#how" class="text-decoration-none fw-semibold d-inline-flex align-items-center gap-2 position-relative"><i class="bi bi-diagram-3-fill"></i> كيف نعمل</a></li>
+        <li><a href="#portfolio" class="text-decoration-none fw-semibold d-inline-flex align-items-center gap-2 position-relative"><i class="bi bi-grid-fill"></i> أعمالنا</a></li>
+        <li><a href="#pricing" class="text-decoration-none fw-semibold d-inline-flex align-items-center gap-2 position-relative"><i class="bi bi-tags-fill"></i> الأسعار</a></li>
+        <li><a href="#testimonials" class="text-decoration-none fw-semibold d-inline-flex align-items-center gap-2 position-relative"><i class="bi bi-chat-quote-fill"></i> آراء العملاء</a></li>
+        <li><a href="#faq" class="text-decoration-none fw-semibold d-inline-flex align-items-center gap-2 position-relative"><i class="bi bi-question-circle-fill"></i> الأسئلة الشائعة</a></li>
+        <li><a href="#contact" class="text-decoration-none fw-semibold d-inline-flex align-items-center gap-2 position-relative"><i class="bi bi-envelope-fill"></i> تواصل معنا</a></li>
       </ul>
-      <div class="nav-actions">
-        <button class="btn-primary nav-cta border-0 fw-bold" onclick="window.location.href='#cta-band'">
+      <div class="nav-actions d-flex align-items-center flex-shrink-0">
+        <button class="btn-primary nav-cta border-0 fw-bold d-inline-flex align-items-center" onclick="window.location.href='#cta-band'">
           <i class="bi bi-rocket-takeoff-fill"></i>
           ابدأ مشروعك
         </button>
@@ -61,15 +61,15 @@
 
   <!-- MOBILE NAVIGATION MENU -->
   <div class="mobile-menu position-fixed start-0 end-0" id="mobileMenu">
-    <ul class="list-unstyled">
+    <ul class="list-unstyled mb-0">
       <li><a href="#services" class="text-decoration-none fw-semibold d-flex align-items-center"><i class="bi bi-stars text-center"></i> خدماتنا</a></li>
       <li><a href="#how" class="text-decoration-none fw-semibold d-flex align-items-center"><i class="bi bi-diagram-3-fill text-center"></i> كيف نعمل</a></li>
       <li><a href="#portfolio" class="text-decoration-none fw-semibold d-flex align-items-center"><i class="bi bi-grid-fill text-center"></i> أعمالنا</a></li>
       <li><a href="#pricing" class="text-decoration-none fw-semibold d-flex align-items-center"><i class="bi bi-tags-fill text-center"></i> الأسعار</a></li>
       <li><a href="#testimonials" class="text-decoration-none fw-semibold d-flex align-items-center"><i class="bi bi-chat-quote-fill text-center"></i> آراء العملاء</a></li>
       <li><a href="#faq" class="text-decoration-none fw-semibold d-flex align-items-center"><i class="bi bi-question-circle-fill text-center"></i> الأسئلة الشائعة</a></li>
-      <li><a href="#contact"><i class="bi bi-envelope-fill text-center"></i> تواصل معنا</a></li>
-      <li><a href="#cta-band" class="mob-cta fw-bold"><i class="bi bi-rocket-takeoff-fill text-center"></i> ابدأ مشروعك</a></li>
+      <li><a href="#contact" class="text-decoration-none fw-semibold d-flex align-items-center"><i class="bi bi-envelope-fill text-center"></i> تواصل معنا</a></li>
+      <li><a href="#cta-band" class="mob-cta fw-bold text-decoration-none d-flex align-items-center"><i class="bi bi-rocket-takeoff-fill text-center"></i> ابدأ مشروعك</a></li>
     </ul>
   </div>
 
