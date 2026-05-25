@@ -30,7 +30,7 @@
 <body>
 
   <!-- BACK TO TOP BUTTON -->
-  <button class="back-top" id="backTop" aria-label="Back to Top">
+  <button class="back-top position-fixed rounded-circle d-flex align-items-center justify-content-center" id="backTop" aria-label="Back to Top">
     <i class="bi bi-chevron-up" style="font-size:18px;font-weight:bold"></i>
   </button>
 
@@ -38,7 +38,7 @@
   <nav id="navbar">
     <div class="container">
       <div class="nav-logo"><img src="images/logo.jpg" alt="Mashrouk"></div>
-      <ul class="nav-links m-0 p-0">
+      <ul class="nav-links m-0 p-0 unstyled-list">
         <li><a href="#services"><i class="bi bi-stars"></i> خدماتنا</a></li>
         <li><a href="#how"><i class="bi bi-diagram-3-fill"></i> كيف نعمل</a></li>
         <li><a href="#portfolio"><i class="bi bi-grid-fill"></i> أعمالنا</a></li>
@@ -52,7 +52,7 @@
           <i class="bi bi-rocket-takeoff-fill"></i>
           ابدأ مشروعك
         </button>
-        <div class="hamburger" id="hamburger" role="button" aria-label="Menu">
+        <div class="hamburger " id="hamburger" role="button" aria-label="Menu">
           <span></span><span></span><span></span>
         </div>
       </div>
@@ -60,581 +60,580 @@
   </nav>
 
   <!-- MOBILE NAVIGATION MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="#services"><i class="bi bi-stars"></i> خدماتنا</a></li>
-      <li><a href="#how"><i class="bi bi-diagram-3-fill"></i> كيف نعمل</a></li>
-      <li><a href="#portfolio"><i class="bi bi-grid-fill"></i> أعمالنا</a></li>
-      <li><a href="#pricing"><i class="bi bi-tags-fill"></i> الأسعار</a></li>
-      <li><a href="#testimonials"><i class="bi bi-chat-quote-fill"></i> آراء العملاء</a></li>
-      <li><a href="#faq"><i class="bi bi-question-circle-fill"></i> الأسئلة الشائعة</a></li>
-      <li><a href="#contact"><i class="bi bi-envelope-fill"></i> تواصل معنا</a></li>
-      <li><a href="#cta-band" class="mob-cta"><i class="bi bi-rocket-takeoff-fill"></i> ابدأ مشروعك</a></li>
+  <div class="mobile-menu position-fixed start-0 end-0" id="mobileMenu">
+    <ul class="list-unstyled">
+      <li><a href="#services" class="text-decoration-none fw-semibold d-flex align-items-center"><i class="bi bi-stars text-center"></i> خدماتنا</a></li>
+      <li><a href="#how" class="text-decoration-none fw-semibold d-flex align-items-center"><i class="bi bi-diagram-3-fill text-center"></i> كيف نعمل</a></li>
+      <li><a href="#portfolio" class="text-decoration-none fw-semibold d-flex align-items-center"><i class="bi bi-grid-fill text-center"></i> أعمالنا</a></li>
+      <li><a href="#pricing" class="text-decoration-none fw-semibold d-flex align-items-center"><i class="bi bi-tags-fill text-center"></i> الأسعار</a></li>
+      <li><a href="#testimonials" class="text-decoration-none fw-semibold d-flex align-items-center"><i class="bi bi-chat-quote-fill text-center"></i> آراء العملاء</a></li>
+      <li><a href="#faq" class="text-decoration-none fw-semibold d-flex align-items-center"><i class="bi bi-question-circle-fill text-center"></i> الأسئلة الشائعة</a></li>
+      <li><a href="#contact"><i class="bi bi-envelope-fill text-center"></i> تواصل معنا</a></li>
+      <li><a href="#cta-band" class="mob-cta fw-bold"><i class="bi bi-rocket-takeoff-fill text-center"></i> ابدأ مشروعك</a></li>
     </ul>
   </div>
 
   <!-- HERO SECTION -->
-<section id="hero"
-  class="hero-section position-relative overflow-hidden container-fluid py-5">
+  <section id="hero" class="hero-section position-relative overflow-hidden container-fluid py-5">
 
-  <!-- Background -->
-  <div class="hero-bg position-absolute z-0"></div>
-  <div class="hero-bg-blob blob-1 position-absolute rounded-circle"></div>
-  <div class="hero-bg-blob blob-2 position-absolute rounded-circle"></div>
+    <!-- Background -->
+    <div class="hero-bg position-absolute z-0"></div>
+    <div class="hero-bg-blob blob-1 position-absolute rounded-circle"></div>
+    <div class="hero-bg-blob blob-2 position-absolute rounded-circle"></div>
 
-  <!-- Content Container -->
-  <div class="container position-relative z-1">
-    <div class="row align-items-center min-vh-100 g-5">
+    <!-- Content Container -->
+    <div class="container position-relative z-1">
+      <div class="row align-items-center min-vh-100 g-5">
 
-      <!-- Left Content -->
-      <div class="col-lg-6">
-        <div class="hero-content">
+        <!-- Left Content -->
+        <div class="col-lg-6">
+          <div class="hero-content">
 
-          <div class="hero-badge d-inline-flex align-items-center gap-2 mb-4 fw-bold">
-            <div class="hero-badge-dot rounded-circle"></div>
-            نحن هنا لتحقيق أحلامك الرقمية
+            <div class="hero-badge d-inline-flex align-items-center gap-2 mb-4 fw-bold">
+              <div class="hero-badge-dot rounded-circle"></div>
+              نحن هنا لتحقيق أحلامك الرقمية
+            </div>
+
+            <h1 class="hero-title fw-bolder">
+              حوّل فكرتك إلى <span>مشروع ناجح</span>
+            </h1>
+
+            <p class="hero-sub">
+              نحن فريق متخصص في بناء تطبيقات وحلول رقمية مبتكرة تساعدك
+              على الوصول إلى أهدافك بسرعة وكفاءة عالية.
+            </p>
+
+            <div class="hero-actions d-flex flex-wrap align-items-center gap-3">
+              <a href="#contact" class="btn-primary text-decoration-none fs-6 fw-bold d-inline-flex align-items-center">
+                ابدأ مشروعك الآن
+                <i class="bi bi-arrow-left ms-2"></i>
+              </a>
+
+              <a href="#how" class="btn-secondary text-decoration-none fs-6 fw-bold d-inline-flex align-items-center">
+                تعرف على خدماتنا
+                <i class="bi bi-grid-fill ms-2"></i>
+              </a>
+            </div>
+
           </div>
-
-          <h1 class="hero-title fw-bolder">
-            حوّل فكرتك إلى <span>مشروع ناجح</span>
-          </h1>
-
-          <p class="hero-sub">
-            نحن فريق متخصص في بناء تطبيقات وحلول رقمية مبتكرة تساعدك
-            على الوصول إلى أهدافك بسرعة وكفاءة عالية.
-          </p>
-
-          <div class="hero-actions d-flex flex-wrap align-items-center gap-3">
-            <a href="#contact"
-              class="btn-primary text-decoration-none fs-6 fw-bold d-inline-flex align-items-center">
-              ابدأ مشروعك الآن
-              <i class="bi bi-arrow-left ms-2"></i>
-            </a>
-
-            <a href="#how"
-              class="btn-secondary text-decoration-none fs-6 fw-bold d-inline-flex align-items-center">
-              تعرف على خدماتنا
-              <i class="bi bi-grid-fill ms-2"></i>
-            </a>
-          </div>
-
         </div>
-      </div>
 
-      <!-- Right Visual -->
-      <div class="col-lg-6">
-        <div class="hero-visual position-relative d-flex align-items-center justify-content-center">
+        <!-- Right Visual -->
+        <div class="col-lg-6">
+          <div class="hero-visual position-relative d-flex align-items-center justify-content-center">
 
-          <div class="hero-card-stack w-100 position-relative">
+            <div class="hero-card-stack w-100 position-relative">
 
-            <!-- Main Card -->
-            <div class="hero-card hero-card-main overflow-hidden position-relative z-2">
+              <!-- Main Card -->
+              <div class="hero-card hero-card-main overflow-hidden position-relative z-2">
 
-              <div class="hero-img-wrap w-100 position-relative overflow-hidden">
-                <img src="images/hero-sec-bg.jfif"
-                  alt="Mashrouk"
-                  class="w-100 h-100 object-fit-cover d-block">
+                <div class="hero-img-wrap w-100 position-relative overflow-hidden">
+                  <img src="images/hero-sec-bg.jfif" alt="Mashrouk" class="w-100 h-100 object-fit-cover d-block">
 
-                <div class="hero-img-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+                  <div class="hero-img-overlay position-absolute top-0 start-0 w-100 h-100"></div>
 
-                <div class="hero-img-badge position-absolute fw-bold d-flex align-items-center">
-                  <div class="hero-img-badge-dot rounded-circle"></div>
-                  فريقنا يعمل الآن
+                  <div class="hero-img-badge position-absolute fw-bold d-flex align-items-center">
+                    <div class="hero-img-badge-dot rounded-circle"></div>
+                    فريقنا يعمل الآن
+                  </div>
+                </div>
+
+                <div class="hero-card-bottom">
+                  <p class="hero-card-label mb-1">
+                    عملاء سعداء بخدماتنا
+                  </p>
+
+                  <h4 class="hero-card-value fw-bolder">
+                    +200 مشروع ناجح
+                  </h4>
+
+                  <p class="hero-card-change mb-0 fw-bolder">
+                    <i class="bi bi-graph-up-arrow"></i>
+                    نمو مستمر في رضا العملاء
+                  </p>
                 </div>
               </div>
 
-              <div class="hero-card-bottom">
-                <p class="hero-card-label mb-1">
-                  عملاء سعداء بخدماتنا
-                </p>
-
-                <h4 class="hero-card-value fw-bolder">
-                  +200 مشروع ناجح
-                </h4>
-
-                <p class="hero-card-change mb-0 fw-bolder">
-                  <i class="bi bi-graph-up-arrow"></i>
-                  نمو مستمر في رضا العملاء
-                </p>
+              <!-- Floating Card 1 -->
+              <div class="hero-card-float card-float-1 position-absolute z-3 fw-semibold d-flex align-items-center">
+                <i class="bi bi-lightning-charge-fill me-2"></i>
+                <span>تنفيذ سريع بجودة عالية</span>
               </div>
-            </div>
 
-            <!-- Floating Card 1 -->
-            <div
-              class="hero-card-float card-float-1 position-absolute z-3 fw-semibold d-flex align-items-center">
-              <i class="bi bi-lightning-charge-fill me-2"></i>
-              <span>تنفيذ سريع بجودة عالية</span>
-            </div>
+              <!-- Floating Card 2 -->
+              <div class="hero-card-float card-float-2 position-absolute z-3 fw-semibold d-flex align-items-center">
+                <i class="bi bi-chat-dots-fill me-2"></i>
+                <span>دعم متواصل 24/7</span>
+              </div>
 
-            <!-- Floating Card 2 -->
-            <div
-              class="hero-card-float card-float-2 position-absolute z-3 fw-semibold d-flex align-items-center">
-              <i class="bi bi-chat-dots-fill me-2"></i>
-              <span>دعم متواصل 24/7</span>
             </div>
-
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- STATS -->
-  <section id="stats" class="position-relative container-fluid">
-    <div class="container">
-    <div class="stats-grid reveal">
-      <div class="stat-item">
-        <span class="stat-num rate" data-target="4.9" data-prefix="★ " data-suffix="">★ 4.9</span>
-        <span class="stat-label">تقييم العملاء</span>
+  <section id="stats" class="position-relative container-fluid p-0">
+    <div class="container px-0">
+      <div class="stats-grid reveal d-flex align-items-center justify-content-around flex-wrap gap-0">
+        <div class="stat-item text-center">
+          <span class="stat-num rate d-block fw-bolder" data-target="4.9" data-prefix="★ " data-suffix="">★ 4.9</span>
+          <span class="stat-label fw-medium">تقييم العملاء</span>
+        </div>
+        <div class="stat-item text-center">
+          <span class="stat-num d-block fw-bolder" data-target="98" data-prefix="" data-suffix="%">98%</span>
+          <span class="stat-label fw-medium">رضا العملاء</span>
+        </div>
+        <div class="stat-item text-center">
+          <span class="stat-num d-block fw-bolder" data-target="8" data-prefix="+" data-suffix="">+8</span>
+          <span class="stat-label fw-medium">سنة خبرة</span>
+        </div>
+        <div class="stat-item text-center">
+          <span class="stat-num d-block fw-bolder" data-target="200" data-prefix="" data-suffix="+">200+</span>
+          <span class="stat-label fw-medium">مشروع ناجح</span>
+        </div>
       </div>
-      <div class="stat-item">
-        <span class="stat-num" data-target="98" data-prefix="" data-suffix="%">98%</span>
-        <span class="stat-label">رضا العملاء</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-num" data-target="8" data-prefix="+" data-suffix="">+8</span>
-        <span class="stat-label">سنة خبرة</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-num" data-target="200" data-prefix="" data-suffix="+">200+</span>
-        <span class="stat-label">مشروع ناجح</span>
-      </div>
-    </div>
     </div>
   </section>
 
   <!-- BRANDS SECTION -->
-  <section id="brands" class="container-fluid">
+  <section id="brands" class="container-fluid position-relative">
     <div class="container">
-    <p class="brands-title">يثق بنا أكثر من 150 عميل حول العالم</p>
-    <div class="brands-track">
-      <div class="brand-pill"><i class="bi bi-bank2"></i> بنك الأهلي</div>
-      <div class="brand-pill"><i class="bi bi-shop"></i> سوق.كوم</div>
-      <div class="brand-pill"><i class="bi bi-hospital"></i> مستشفى الملك</div>
-      <div class="brand-pill"><i class="bi bi-mortarboard-fill"></i> جامعة القاهرة</div>
-      <div class="brand-pill"><i class="bi bi-airplane-fill"></i> مصر للطيران</div>
-      <div class="brand-pill"><i class="bi bi-box-seam-fill"></i> أرامكس</div>
-      <div class="brand-pill"><i class="bi bi-wifi"></i> أورنج مصر</div>
-    </div>
+      <p class="brands-title fw-semibold text-center">يثق بنا أكثر من 150 عميل حول العالم</p>
+      <div class="brands-track d-flex flex-wrap align-items-center justify-content-center gap-5">
+        <div class="brand-pill fw-bold fs-6"><i class="bi bi-bank2"></i> بنك الأهلي</div>
+        <div class="brand-pill fw-bold fs-6"><i class="bi bi-shop"></i> سوق.كوم</div>
+        <div class="brand-pill fw-bold fs-6"><i class="bi bi-hospital"></i> مستشفى الملك</div>
+        <div class="brand-pill fw-bold fs-6"><i class="bi bi-mortarboard-fill"></i> جامعة القاهرة</div>
+        <div class="brand-pill fw-bold fs-6"><i class="bi bi-airplane-fill"></i> مصر للطيران</div>
+        <div class="brand-pill fw-bold fs-6"><i class="bi bi-box-seam-fill"></i> أرامكس</div>
+        <div class="brand-pill fw-bold fs-6"><i class="bi bi-wifi"></i> أورنج مصر</div>
+      </div>
     </div>
   </section>
 
   <!-- SERVICES SECTION -->
   <section id="services" class="container-fluid">
     <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag">خدماتنا</span>
-      <h2 class="section-title">كل ما تحتاجه لمشروعك الرقمي</h2>
-      <p class="section-sub">نقدم مجموعة متكاملة من الحلول التقنية المصممة خصيصاً لتنمية أعمالك</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card reveal">
-        <div class="service-icon icon-red"><i class="bi bi-phone-fill"></i></div>
-        <h3 class="service-title">تطوير تطبيقات الموبايل</h3>
-        <p class="service-desc">بناء تطبيقات سريعة وذكية تعمل على أندرويد و iOS باستخدام تقنيات متطورة.</p><a
-          href="#cta-band" class="service-link">اعرف أكثر <i class="bi bi-arrow-left"></i></a>
+      <div class="section-header reveal text-center">
+        <span class="section-tag d-inline-flex align-items-center gap-2 fw-bold mb-3">خدماتنا</span>
+        <h2 class="section-title fw-bolder mb-3">كل ما تحتاجه لمشروعك الرقمي</h2>
+        <p class="section-sub fs-6 my-0 mx-auto">نقدم مجموعة متكاملة من الحلول التقنية المصممة خصيصاً لتنمية أعمالك</p>
       </div>
-      <div class="service-card reveal">
-        <div class="service-icon icon-gray"><i class="bi bi-palette-fill"></i></div>
-        <h3 class="service-title">تصميم واجهات المستخدم</h3>
-        <p class="service-desc">تجربة مستخدم مميزة وتصاميم عصرية تجذب عملاءك وتسهل عليهم الوصول لخدماتك.</p><a
-          href="#cta-band" class="service-link">اعرف أكثر <i class="bi bi-arrow-left"></i></a>
+      <div class="services-grid d-grid">
+        <div class="service-card reveal position-relative overflow-hidden">
+          <div class="service-icon icon-red d-flex align-items-center justify-content-center mb-4"><i class="bi bi-phone-fill"></i></div>
+          <h3 class="service-title fw-bolder">تطوير تطبيقات الموبايل</h3>
+          <p class="service-desc">بناء تطبيقات سريعة وذكية تعمل على أندرويد و iOS باستخدام تقنيات متطورة.</p><a
+            href="#cta-band" class="service-link text-decoration-none fw-bold d-inline-flex align-items-center gap-2">اعرف أكثر <i class="bi bi-arrow-left"></i></a>
+        </div>
+        <div class="service-card reveal position-relative overflow-hidden">
+          <div class="service-icon icon-gray d-flex align-items-center justify-content-center mb-4"><i class="bi bi-palette-fill"></i></div>
+          <h3 class="service-title fw-bolder">تصميم واجهات المستخدم</h3>
+          <p class="service-desc">تجربة مستخدم مميزة وتصاميم عصرية تجذب عملاءك وتسهل عليهم الوصول لخدماتك.</p><a
+            href="#cta-band" class="service-link text-decoration-none fw-bold d-inline-flex align-items-center gap-2">اعرف أكثر <i class="bi bi-arrow-left"></i></a>
+        </div>
+        <div class="service-card reveal position-relative overflow-hidden">
+          <div class="service-icon icon-green d-flex align-items-center justify-content-center mb-4"><i class="bi bi-bar-chart-fill"></i></div>
+          <h3 class="service-title fw-bolder">تحليل البيانات</h3>
+          <p class="service-desc">حول أرقامك إلى قرارات حكيمة مع لوحات تحكم تفاعلية وتقارير دقيقة.</p><a
+            href="#cta-band" class="service-link text-decoration-none fw-bold d-inline-flex align-items-center gap-2">اعرف أكثر <i class="bi bi-arrow-left"></i></a>
+        </div>
+        <div class="service-card reveal position-relative overflow-hidden">
+          <div class="service-icon icon-red d-flex align-items-center justify-content-center mb-4"><i class="bi bi-globe2"></i></div>
+          <h3 class="service-title fw-bolder">تطوير المواقع الإلكترونية</h3>
+          <p class="service-desc">مواقع ويب سريعة وآمنة ومتجاوبة مع جميع الأجهزة تعكس احترافية علامتك التجارية.</p><a
+            href="#cta-band" class="service-link text-decoration-none fw-bold d-inline-flex align-items-center gap-2">اعرف أكثر <i class="bi bi-arrow-left"></i></a>
+        </div>
+        <div class="service-card reveal position-relative overflow-hidden">
+          <div class="service-icon icon-gray d-flex align-items-center justify-content-center mb-4"><i class="bi bi-cart-fill"></i></div>
+          <h3 class="service-title fw-bolder">حلول التجارة الإلكترونية</h3>
+          <p class="service-desc">متاجر إلكترونية متكاملة بأنظمة دفع آمنة وإدارة مخزون ذكية لتعزيز مبيعاتك.</p><a
+            href="#cta-band" class="service-link text-decoration-none fw-bold d-inline-flex align-items-center gap-2">اعرف أكثر <i class="bi bi-arrow-left"></i></a>
+        </div>
+        <div class="service-card reveal position-relative overflow-hidden">
+          <div class="service-icon icon-green d-flex align-items-center justify-content-center mb-4"><i class="bi bi-cpu-fill"></i></div>
+          <h3 class="service-title fw-bolder">الذكاء الاصطناعي والأتمتة</h3>
+          <p class="service-desc">دمج حلول الذكاء الاصطناعي وأتمتة العمليات لتوفير الوقت ورفع كفاءة مشروعك.</p><a
+            href="#cta-band" class="service-link text-decoration-none fw-bold d-inline-flex align-items-center gap-2">اعرف أكثر <i class="bi bi-arrow-left"></i></a>
+        </div>
       </div>
-      <div class="service-card reveal">
-        <div class="service-icon icon-green"><i class="bi bi-bar-chart-fill"></i></div>
-        <h3 class="service-title">تحليل البيانات</h3>
-        <p class="service-desc">حول أرقامك إلى قرارات حكيمة مع لوحات تحكم تفاعلية وتقارير دقيقة.</p><a href="#cta-band"
-          class="service-link">اعرف أكثر <i class="bi bi-arrow-left"></i></a>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon icon-red"><i class="bi bi-globe2"></i></div>
-        <h3 class="service-title">تطوير المواقع الإلكترونية</h3>
-        <p class="service-desc">مواقع ويب سريعة وآمنة ومتجاوبة مع جميع الأجهزة تعكس احترافية علامتك التجارية.</p><a
-          href="#cta-band" class="service-link">اعرف أكثر <i class="bi bi-arrow-left"></i></a>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon icon-gray"><i class="bi bi-cart-fill"></i></div>
-        <h3 class="service-title">حلول التجارة الإلكترونية</h3>
-        <p class="service-desc">متاجر إلكترونية متكاملة بأنظمة دفع آمنة وإدارة مخزون ذكية لتعزيز مبيعاتك.</p><a
-          href="#cta-band" class="service-link">اعرف أكثر <i class="bi bi-arrow-left"></i></a>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon icon-green"><i class="bi bi-cpu-fill"></i></div>
-        <h3 class="service-title">الذكاء الاصطناعي والأتمتة</h3>
-        <p class="service-desc">دمج حلول الذكاء الاصطناعي وأتمتة العمليات لتوفير الوقت ورفع كفاءة مشروعك.</p><a
-          href="#cta-band" class="service-link">اعرف أكثر <i class="bi bi-arrow-left"></i></a>
-      </div>
-    </div>
     </div>
   </section>
 
   <!-- HOW IT WORKS SECTION -->
-  <section id="how" class="container-fluid">
+  <section id="how" class="container-fluid position-relative">
     <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag">كيف نعمل</span>
-      <h2 class="section-title">من الفكرة إلى الإطلاق في 4 خطوات</h2>
-      <p class="section-sub">منهجية واضحة ومجربة لضمان نجاح مشروعك</p>
-    </div>
-    <div class="steps-grid">
-      <div class="step-card reveal">
-        <div class="step-num">١</div>
-        <h3 class="step-title">الاستشارة والتخطيط</h3>
-        <p class="step-desc">نجلس معك لفهم رؤيتك وأهدافك ووضع خطة عمل واضحة ومحددة المعالم.</p>
+      <div class="section-header reveal text-center">
+        <span class="section-tag d-inline-flex align-items-center gap-2 fw-bold mb-3">كيف نعمل</span>
+        <h2 class="section-title fw-bolder mb-3">من الفكرة إلى الإطلاق في 4 خطوات</h2>
+        <p class="section-sub fs-6 my-0 mx-auto">منهجية واضحة ومجربة لضمان نجاح مشروعك</p>
       </div>
-      <div class="step-card reveal">
-        <div class="step-num">٢</div>
-        <h3 class="step-title">التصميم والنمذجة</h3>
-        <p class="step-desc">نصمم نماذج تفاعلية لمشروعك للحصول على موافقتك قبل بدء التطوير الفعلي.</p>
+      <div class="steps-grid d-grid position-relative">
+        <div class="step-card reveal text-center position-relative z-1">
+          <div class="step-num fs-4 fw-bolder rounded-circle d-flex align-items-center justify-content-center">١</div>
+          <h3 class="step-title fw-bolder fs-6">الاستشارة والتخطيط</h3>
+          <p class="step-desc">نجلس معك لفهم رؤيتك وأهدافك ووضع خطة عمل واضحة ومحددة المعالم.</p>
+        </div>
+        <div class="step-card reveal text-center position-relative z-1">
+          <div class="step-num fs-4 fw-bolder rounded-circle d-flex align-items-center justify-content-center">٢</div>
+          <h3 class="step-title fw-bolder fs-6">التصميم والنمذجة</h3>
+          <p class="step-desc">نصمم نماذج تفاعلية لمشروعك للحصول على موافقتك قبل بدء التطوير الفعلي.</p>
+        </div>
+        <div class="step-card reveal text-center position-relative z-1">
+          <div class="step-num fs-4 fw-bolder rounded-circle d-flex align-items-center justify-content-center">٣</div>
+          <h3 class="step-title fw-bolder fs-6">التطوير والاختبار</h3>
+          <p class="step-desc">فريقنا التقني يبني مشروعك بأعلى معايير الجودة مع اختبار شامل لكل مرحلة.</p>
+        </div>
+        <div class="step-card reveal text-center position-relative z-1">
+          <div class="step-num fs-4 fw-bolder rounded-circle d-flex align-items-center justify-content-center">٤</div>
+          <h3 class="step-title fw-bolder fs-6">الإطلاق والدعم</h3>
+          <p class="step-desc">نطلق مشروعك ونوفر دعماً فنياً مستمراً لضمان نموه وتطوره الدائم.</p>
+        </div>
       </div>
-      <div class="step-card reveal">
-        <div class="step-num">٣</div>
-        <h3 class="step-title">التطوير والاختبار</h3>
-        <p class="step-desc">فريقنا التقني يبني مشروعك بأعلى معايير الجودة مع اختبار شامل لكل مرحلة.</p>
-      </div>
-      <div class="step-card reveal">
-        <div class="step-num">٤</div>
-        <h3 class="step-title">الإطلاق والدعم</h3>
-        <p class="step-desc">نطلق مشروعك ونوفر دعماً فنياً مستمراً لضمان نموه وتطوره الدائم.</p>
-      </div>
-    </div>
     </div>
   </section>
 
   <!-- PORTFOLIO SECTION -->
   <section id="portfolio" class="container-fluid">
     <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag">أعمالنا</span>
-      <h2 class="section-title">مشاريع أنجزناها بنجاح</h2>
-      <p class="section-sub">نماذج حقيقية من مشاريعنا المتنوعة التي أحدثت فرقاً حقيقياً لعملائنا</p>
-    </div>
-    <div class="portfolio-grid" id="portfolioGrid">
-      <!-- Items Rendered by JavaScript -->
-    </div>
+      <div class="section-header reveal text-center">
+        <span class="section-tag d-inline-flex align-items-center gap-2 fw-bold mb-3">أعمالنا</span>
+        <h2 class="section-title fw-bolder mb-3">مشاريع أنجزناها بنجاح</h2>
+        <p class="section-sub fs-6 my-0 mx-auto">نماذج حقيقية من مشاريعنا المتنوعة التي أحدثت فرقاً حقيقياً لعملائنا</p>
+      </div>
+      <div class="portfolio-grid d-grid gap-4 mt-5" id="portfolioGrid">
+        <!-- Items Rendered by JavaScript -->
+      </div>
     </div>
   </section>
 
   <!-- PRICING SECTION -->
   <section id="pricing" class="container-fluid">
     <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag">الأسعار</span>
-      <h2 class="section-title">باقات تناسب جميع المشاريع</h2>
-      <p class="section-sub">اختر الباقة المناسبة لمشروعك وابدأ رحلة النجاح الرقمي اليوم</p>
-    </div>
-    <div class="pricing-grid">
-      <div class="pricing-card reveal">
-        <div class="pricing-plan">الباقة الأساسية</div>
-        <div class="pricing-price"><sup>$</sup>499</div>
-        <div class="pricing-period">/ شهرياً · لمدة 3 أشهر</div>
-        <ul class="pricing-features">
-          <li><i class="bi bi-check-circle-fill check"></i> موقع ويب احترافي (5 صفحات)</li>
-          <li><i class="bi bi-check-circle-fill check"></i> تصميم متجاوب مع الموبايل</li>
-          <li><i class="bi bi-check-circle-fill check"></i> استضافة وأمان SSL</li>
-          <li><i class="bi bi-check-circle-fill check"></i> دعم فني بالبريد الإلكتروني</li>
-          <li><i class="bi bi-x-circle cross"></i> لوحة تحكم مخصصة</li>
-          <li><i class="bi bi-x-circle cross"></i> تطبيق موبايل</li>
-        </ul>
-        <a href="#contact" class="btn-outline">ابدأ الآن</a>
+      <div class="section-header reveal text-center">
+        <span class="section-tag d-inline-flex align-items-center gap-2 fw-bold mb-3">الأسعار</span>
+        <h2 class="section-title fw-bolder mb-3">باقات تناسب جميع المشاريع</h2>
+        <p class="section-sub fs-6 my-0 mx-auto">اختر الباقة المناسبة لمشروعك وابدأ رحلة النجاح الرقمي اليوم</p>
       </div>
-      <div class="pricing-card featured reveal">
-        <div class="pricing-badge">الأكثر طلباً ⭐</div>
-        <div class="pricing-plan">الباقة الاحترافية</div>
-        <div class="pricing-price"><sup>$</sup>999</div>
-        <div class="pricing-period">/ شهرياً · لمدة 6 أشهر</div>
-        <ul class="pricing-features">
-          <li><i class="bi bi-check-circle-fill check"></i> موقع ويب كامل (غير محدود)</li>
-          <li><i class="bi bi-check-circle-fill check"></i> لوحة تحكم مخصصة</li>
-          <li><i class="bi bi-check-circle-fill check"></i> تكامل مع أنظمة الدفع</li>
-          <li><i class="bi bi-check-circle-fill check"></i> تحليلات وتقارير تفصيلية</li>
-          <li><i class="bi bi-check-circle-fill check"></i> دعم فني على مدار الساعة</li>
-          <li><i class="bi bi-x-circle cross"></i> تطبيق موبايل</li>
-        </ul>
-        <a href="#contact" class="btn-outline">ابدأ الآن</a>
+      <div class="pricing-grid d-grid align-items-start mt-5">
+        <div class="pricing-card reveal position-relative">
+          <div class="pricing-plan fw-bold text-uppercase">الباقة الأساسية</div>
+          <div class="pricing-price mb-1 fw-bolder"><sup>$</sup>499</div>
+          <div class="pricing-period mb-4">/ شهرياً · لمدة 3 أشهر</div>
+          <ul class="pricing-features list-unstyled">
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> موقع ويب احترافي (5 صفحات)</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> تصميم متجاوب مع الموبايل</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> استضافة وأمان SSL</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> دعم فني بالبريد الإلكتروني</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-x-circle cross fs-6 fw-bolder flex-shrink-0"></i> لوحة تحكم مخصصة</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-x-circle cross fs-6 fw-bolder flex-shrink-0"></i> تطبيق موبايل</li>
+          </ul>
+          <a href="#contact" class="btn-outline text-decoration-none fw-bold d-inline-flex align-items-center gap-2">ابدأ الآن</a>
+        </div>
+        <div class="pricing-card featured reveal position-relative">
+          <div class="pricing-badge position-absolute  fw-bolder">الأكثر طلباً ⭐</div>
+          <div class="pricing-plan fw-bold text-uppercase">الباقة الاحترافية</div>
+          <div class="pricing-price mb-1 fw-bolder"><sup>$</sup>999</div>
+          <div class="pricing-period mb-4">/ شهرياً · لمدة 6 أشهر</div>
+          <ul class="pricing-features list-unstyled">
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> موقع ويب كامل (غير محدود)</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> لوحة تحكم مخصصة</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> تكامل مع أنظمة الدفع</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> تحليلات وتقارير تفصيلية</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> دعم فني على مدار الساعة</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-x-circle cross fs-6 fw-bolder flex-shrink-0"></i> تطبيق موبايل</li>
+          </ul>
+          <a href="#contact" class="btn-outline text-decoration-none fw-bold d-inline-flex align-items-center gap-2">ابدأ الآن</a>
+        </div>
+        <div class="pricing-card reveal position-relative">
+          <div class="pricing-plan fw-bold text-uppercase">الباقة المتكاملة</div>
+          <div class="pricing-price mb-1 fw-bolder"><sup>$</sup>1999</div>
+          <div class="pricing-period mb-4">/ شهرياً · اشتراك سنوي</div>
+          <ul class="pricing-features list-unstyled">
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> كل مميزات الباقة الاحترافية</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> تطبيق iOS وأندرويد</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> تكامل الذكاء الاصطناعي</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> أتمتة العمليات</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> مدير حساب مخصص</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill check fs-6 fw-bolder flex-shrink-0"></i> تقارير استراتيجية شهرية</li>
+          </ul>
+          <a href="#contact" class="btn-outline text-decoration-none fw-bold d-inline-flex align-items-center gap-2">ابدأ الآن</a>
+        </div>
       </div>
-      <div class="pricing-card reveal">
-        <div class="pricing-plan">الباقة المتكاملة</div>
-        <div class="pricing-price"><sup>$</sup>1999</div>
-        <div class="pricing-period">/ شهرياً · اشتراك سنوي</div>
-        <ul class="pricing-features">
-          <li><i class="bi bi-check-circle-fill check"></i> كل مميزات الباقة الاحترافية</li>
-          <li><i class="bi bi-check-circle-fill check"></i> تطبيق iOS وأندرويد</li>
-          <li><i class="bi bi-check-circle-fill check"></i> تكامل الذكاء الاصطناعي</li>
-          <li><i class="bi bi-check-circle-fill check"></i> أتمتة العمليات</li>
-          <li><i class="bi bi-check-circle-fill check"></i> مدير حساب مخصص</li>
-          <li><i class="bi bi-check-circle-fill check"></i> تقارير استراتيجية شهرية</li>
-        </ul>
-        <a href="#contact" class="btn-outline">ابدأ الآن</a>
-      </div>
-    </div>
     </div>
   </section>
 
   <!-- TESTIMONIALS SECTION -->
   <section id="testimonials" class="container-fluid">
     <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag">آراء العملاء</span>
-      <h2 class="section-title">ماذا يقول عملاؤنا؟</h2>
-      <p class="section-sub">نفخر بثقة عملائنا وشهاداتهم في تجربتهم معنا</p>
-    </div>
-    <div class="owl-carousel owl-testimonials" id="testimonialsCarousel">
-      <!-- Items Rendered by JavaScript -->
-    </div>
+      <div class="section-header reveal text-center">
+        <span class="section-tag d-inline-flex align-items-center gap-2 fw-bold mb-3">آراء العملاء</span>
+        <h2 class="section-title fw-bolder mb-3">ماذا يقول عملاؤنا؟</h2>
+        <p class="section-sub fs-6 my-0 mx-auto">نفخر بثقة عملائنا وشهاداتهم في تجربتهم معنا</p>
+      </div>
+      <div class="owl-carousel owl-testimonials" id="testimonialsCarousel">
+        <!-- Items Rendered by JavaScript -->
+      </div>
     </div>
   </section>
 
   <!-- FAQ SECTION -->
   <section id="faq" class="container-fluid">
     <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag">الأسئلة الشائعة</span>
-      <h2 class="section-title">إجابات لأهم أسئلتك</h2>
-      <p class="section-sub">نجيب على أكثر الأسئلة التي يطرحها عملاؤنا قبل البدء</p>
-    </div>
-    <div class="faq-wrap">
-      <div class="faq-item">
-        <button class="faq-q">كم يستغرق تنفيذ مشروع كامل؟<span class="faq-icon"><i
-              class="bi bi-plus"></i></span></button>
-        <div class="faq-a">
-          <div class="faq-a-inner">يعتمد الوقت على حجم المشروع وتعقيده. عادةً تستغرق المشاريع البسيطة من 2-4 أسابيع،
-            بينما المشاريع المتوسطة تحتاج 4-8 أسابيع. المشاريع الكاملة قد تمتد من 3-6 أشهر. نحرص دائماً على الالتزام
-            بالجدول الزمني المتفق عليه.</div>
+      <div class="section-header reveal text-center">
+        <span class="section-tag d-inline-flex align-items-center gap-2 fw-bold mb-3">الأسئلة الشائعة</span>
+        <h2 class="section-title fw-bolder mb-3">إجابات لأهم أسئلتك</h2>
+        <p class="section-sub fs-6 my-0 mx-auto">نجيب على أكثر الأسئلة التي يطرحها عملاؤنا قبل البدء</p>
+      </div>
+      <div class="faq-wrap">
+        <div class="faq-item">
+          <button class="faq-q w-100 text-right border-0 fw-bold fs-6 d-flex align-items-center justify-content-between gap-3">كم يستغرق تنفيذ مشروع كامل؟<span class="faq-icon rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"><i
+                class="bi bi-plus"></i></span></button>
+          <div class="faq-a overflow-hidden">
+            <div class="faq-a-inner">يعتمد الوقت على حجم المشروع وتعقيده. عادةً تستغرق المشاريع البسيطة من 2-4 أسابيع،
+              بينما المشاريع المتوسطة تحتاج 4-8 أسابيع. المشاريع الكاملة قد تمتد من 3-6 أشهر. نحرص دائماً على الالتزام
+              بالجدول الزمني المتفق عليه.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-100 text-right border-0 fw-bold fs-6 d-flex align-items-center justify-content-between gap-3">هل تقدمون ضماناً بعد التسليم؟<span class="faq-icon rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"><i
+                class="bi bi-plus"></i></span></button>
+          <div class="faq-a overflow-hidden">
+            <div class="faq-a-inner">نعم، نقدم ضمان صيانة مجاني لمدة 3 أشهر بعد التسليم يشمل إصلاح أي أخطاء أو مشاكل
+              تقنية. بعد ذلك نوفر باقات صيانة شهرية باسعار تنافسية لضمان استمرار مشروعك بكفاءة عالية.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-100 text-right border-0 fw-bold fs-6 d-flex align-items-center justify-content-between gap-3">ما هي آليات الدفع المتاحة؟<span class="faq-icon rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"><i
+                class="bi bi-plus"></i></span></button>
+          <div class="faq-a overflow-hidden">
+            <div class="faq-a-inner">نقبل التحويل البنكي، بطاقات الائتمان، وبعض وسائل الدفع الإلكتروني. نتبع نظام الدفع
+              على مراحل: 30% عند البدء، 40% عند منتصف المشروع، و30% عند التسليم النهائي.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-100 text-right border-0 fw-bold fs-6 d-flex align-items-center justify-content-between gap-3">هل يمكنني تعديل مشروعي بعد الإطلاق؟<span class="faq-icon rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"><i
+                class="bi bi-plus"></i></span></button>
+          <div class="faq-a overflow-hidden">
+            <div class="faq-a-inner">بالطبع! نبني مشاريعنا بمرونة تامة لتسهيل التحديثات المستقبلية. يمكنك إضافة ميزات
+              جديدة أو تعديل التصميم أو توسيع المشروع في أي وقت من خلال باقات التطوير المستمر لدينا.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-100 text-right border-0 fw-bold fs-6 d-flex align-items-center justify-content-between gap-3">هل تعملون مع العملاء خارج مصر？<span class="faq-icon rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"><i
+                class="bi bi-plus"></i></span></button>
+          <div class="faq-a overflow-hidden">
+            <div class="faq-a-inner">نعم، نخدم عملاء من مختلف أنحاء العالم العربي وبعض الدول الأجنبية. نعمل عن بُعد
+              بكفاءة
+              تامة ونتواصل عبر الفيديو والبريد الإلكتروني لضمان تنسيق مثالي بغض النظر عن موقعك الجغرافي.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-100 text-right border-0 fw-bold fs-6 d-flex align-items-center justify-content-between gap-3">ما الفرق بينكم وبين المستقلين？<span class="faq-icon rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"><i
+                class="bi bi-plus"></i></span></button>
+          <div class="faq-a overflow-hidden">
+            <div class="faq-a-inner">نحن فريق متكامل من المتخصصين يشمل مصممين ومطورين ومحللي بيانات وخبراء SEO. هذا يضمن
+              تكاملاً حقيقياً في المشروع وليس مجرد تنفيذ منفصل. كما نوفر ضمانات واتفاقيات رسمية تحمي مصالحك.</div>
+          </div>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-q">هل تقدمون ضماناً بعد التسليم؟<span class="faq-icon"><i
-              class="bi bi-plus"></i></span></button>
-        <div class="faq-a">
-          <div class="faq-a-inner">نعم، نقدم ضمان صيانة مجاني لمدة 3 أشهر بعد التسليم يشمل إصلاح أي أخطاء أو مشاكل
-            تقنية. بعد ذلك نوفر باقات صيانة شهرية باسعار تنافسية لضمان استمرار مشروعك بكفاءة عالية.</div>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">ما هي آليات الدفع المتاحة؟<span class="faq-icon"><i
-              class="bi bi-plus"></i></span></button>
-        <div class="faq-a">
-          <div class="faq-a-inner">نقبل التحويل البنكي، بطاقات الائتمان، وبعض وسائل الدفع الإلكتروني. نتبع نظام الدفع
-            على مراحل: 30% عند البدء، 40% عند منتصف المشروع، و30% عند التسليم النهائي.</div>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">هل يمكنني تعديل مشروعي بعد الإطلاق؟<span class="faq-icon"><i
-              class="bi bi-plus"></i></span></button>
-        <div class="faq-a">
-          <div class="faq-a-inner">بالطبع! نبني مشاريعنا بمرونة تامة لتسهيل التحديثات المستقبلية. يمكنك إضافة ميزات
-            جديدة أو تعديل التصميم أو توسيع المشروع في أي وقت من خلال باقات التطوير المستمر لدينا.</div>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">هل تعملون مع العملاء خارج مصر？<span class="faq-icon"><i
-              class="bi bi-plus"></i></span></button>
-        <div class="faq-a">
-          <div class="faq-a-inner">نعم، نخدم عملاء من مختلف أنحاء العالم العربي وبعض الدول الأجنبية. نعمل عن بُعد بكفاءة
-            تامة ونتواصل عبر الفيديو والبريد الإلكتروني لضمان تنسيق مثالي بغض النظر عن موقعك الجغرافي.</div>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">ما الفرق بينكم وبين المستقلين？<span class="faq-icon"><i
-              class="bi bi-plus"></i></span></button>
-        <div class="faq-a">
-          <div class="faq-a-inner">نحن فريق متكامل من المتخصصين يشمل مصممين ومطورين ومحللي بيانات وخبراء SEO. هذا يضمن
-            تكاملاً حقيقياً في المشروع وليس مجرد تنفيذ منفصل. كما نوفر ضمانات واتفاقيات رسمية تحمي مصالحك.</div>
-        </div>
-      </div>
-    </div>
     </div>
   </section>
 
   <!-- CALL TO ACTION BAND -->
-  <div id="cta-band" class="container-fluid">
-    <div class="container">
-    <p class="cta-label">هل أنت مستعد؟</p>
-    <h2 class="cta-title">حوّل فكرتك إلى مشروع ناجح اليوم</h2>
-    <p class="cta-sub">استشارة مجانية تماماً · لا التزامات · نتائج مضمونة</p>
-    <div class="cta-pills">
-      <span class="cta-pill"><i class="bi bi-check-lg"></i> رد خلال 24 ساعة</span>
-      <span class="cta-pill"><i class="bi bi-check-lg"></i> استشارة مجانية</span>
-      <span class="cta-pill"><i class="bi bi-check-lg"></i> عرض سعر مفصّل</span>
-    </div>
-    <a href="#contact" class="btn-white">ابدأ مشروعك الآن <i class="bi bi-arrow-left"></i></a>
+  <div id="cta-band" class="container-fluid text-center position-relative overflow-hidden">
+    <div class="container position-relative z-1">
+      <p class="cta-label text-uppercase mb-3 fw-bold">هل أنت مستعد؟</p>
+      <h2 class="cta-title fw-bolder mb-3">حوّل فكرتك إلى مشروع ناجح اليوم</h2>
+      <p class="cta-sub fs-6">استشارة مجانية تماماً · لا التزامات · نتائج مضمونة</p>
+      <div class="cta-pills d-flex flex-wrap justify-content-center gap-3">
+        <span class="cta-pill fw-semibold"><i class="bi bi-check-lg"></i> رد خلال 24 ساعة</span>
+        <span class="cta-pill fw-semibold"><i class="bi bi-check-lg"></i> استشارة مجانية</span>
+        <span class="cta-pill fw-semibold"><i class="bi bi-check-lg"></i> عرض سعر مفصّل</span>
+      </div>
+      <a href="#contact" class="btn-white text-decoration-none fs-6 fw-bolder d-inline-flex align-items-center gap-2 position-relative z-1">ابدأ مشروعك الآن <i class="bi bi-arrow-left"></i></a>
     </div>
   </div>
 
   <!-- CONTACT SECTION -->
   <section id="contact" class="container-fluid">
     <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag">تواصل معنا</span>
-      <h2 class="section-title">لنصنع معاً <span style="color:var(--red)">شيئاً</span> استثنائياً</h2>
-      <p class="section-sub">هل لديك طلب خاص أو تودّ التعاون معنا؟ راسلنا وسنردّ عليك في أقرب وقت.</p>
-    </div>
-    <div class="contact-wrap">
-      <!-- Contact Info Card -->
-      <div class="contact-info reveal">
-        <h3>تفاصيل التواصل</h3>
-        <p>نسعد بسماع طلباتكم وأفكاركم. فريقنا متاح على مدار الأسبوع.</p>
+      <div class="section-header reveal text-center">
+        <span class="section-tag d-inline-flex align-items-center gap-2 fw-bold mb-3">تواصل معنا</span>
+        <h2 class="section-title fw-bolder mb-3">لنصنع معاً <span style="color:var(--red)">شيئاً</span> استثنائياً</h2>
+        <p class="section-sub fs-6 my-0 mx-auto">هل لديك طلب خاص أو تودّ التعاون معنا؟ راسلنا وسنردّ عليك في أقرب وقت.</p>
+      </div>
+      
+      <div class="contact-wrap row g-4 mt-5">
+        <!-- Contact Info Card -->
+        <div class="col-lg-5 contact-info reveal h-100">
+          <h3 class="fw-bold mb-2">تفاصيل التواصل</h3>
+          <p>نسعد بسماع طلباتكم وأفكاركم. فريقنا متاح على مدار الأسبوع.</p>
 
-        <div class="contact-item">
-          <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
-          <div>
-            <div class="contact-item-label">اتصل بنا</div>
-            <div class="contact-item-val">+20 100 123 4567</div>
+          <div class="contact-item d-flex align-items-start gap-3 mb-4">
+            <div class="contact-icon fs-5 d-flex align-items-center justify-content-center flex-shrink-0"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <div class="contact-item-label d-block fw-semibold">اتصل بنا</div>
+              <div class="contact-item-val fs-6 fw-bold">+20 100 123 4567</div>
+            </div>
+          </div>
+
+          <div class="contact-item d-flex align-items-start gap-3 mb-4">
+            <div class="contact-icon fs-5 d-flex align-items-center justify-content-center flex-shrink-0"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <div class="contact-item-label d-block fw-semibold">البريد الإلكتروني</div>
+              <div class="contact-item-val fs-6 fw-bold">hello@mashrouk.com</div>
+            </div>
+          </div>
+
+          <div class="contact-item d-flex align-items-start gap-3 mb-4">
+            <div class="contact-icon fs-5 d-flex align-items-center justify-content-center flex-shrink-0"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <div class="contact-item-label d-block fw-semibold">الموقع</div>
+              <div class="contact-item-val fs-6 fw-bold">القاهرة، مصر — الزمالك</div>
+            </div>
+          </div>
+
+          <div class="contact-item d-flex align-items-start gap-3 mb-4">
+            <div class="contact-icon fs-5 d-flex align-items-center justify-content-center flex-shrink-0"><i class="bi bi-clock-fill"></i></div>
+            <div>
+              <div class="contact-item-label d-block fw-semibold">ساعات العمل</div>
+              <div class="contact-item-val fs-6 fw-bold">السبت – الخميس: 9ص – 10م</div>
+            </div>
+          </div>
+
+          <div class="contact-social d-flex">
+            <a href="#" title="WhatsApp" class="text-decoration-none  fs-6 rounded-circle d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" title="Facebook" class="text-decoration-none  fs-6 rounded-circle d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+            <a href="#" title="Instagram" class="text-decoration-none  fs-6 rounded-circle d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+            <a href="#" title="LinkedIn" class="text-decoration-none  fs-6 rounded-circle d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
-        <div class="contact-item">
-          <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
-          <div>
-            <div class="contact-item-label">البريد الإلكتروني</div>
-            <div class="contact-item-val">hello@mashrouk.com</div>
-          </div>
-        </div>
+        <!-- Contact Form Card -->
+        <div class="col-lg-7 reveal">
+          <div class="contact-form-wrap h-100">
+            <h3 class="fs-4 fw-bold mb-4">أرسل رسالتك</h3>
 
-        <div class="contact-item">
-          <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
-          <div>
-            <div class="contact-item-label">الموقع</div>
-            <div class="contact-item-val">القاهرة، مصر — الزمالك</div>
-          </div>
-        </div>
+            <div id="contactForm">
+              <div class="form-row d-grid gap-3">
+                <div class="form-group position-relative d-flex flex-column">
+                  <label for="name" class="fw-bold">الاسم الكامل *</label>
+                  <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" class="w-100">
+                  <div class="error-msg fw-bold" id="nameError">يرجى إدخال الاسم (3 أحرف على الأقل)</div>
+                </div>
+                <div class="form-group position-relative d-flex flex-column">
+                  <label for="email" class="fw-bold">البريد الإلكتروني *</label>
+                  <input type="email" id="email" name="email" placeholder="example@email.com" dir="ltr" class="w-100">
+                  <div class="error-msg fw-bold" id="emailError">يرجى إدخال بريد إلكتروني صحيح</div>
+                </div>
+              </div>
 
-        <div class="contact-item">
-          <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
-          <div>
-            <div class="contact-item-label">ساعات العمل</div>
-            <div class="contact-item-val">السبت – الخميس: 9ص – 10م</div>
-          </div>
-        </div>
+              <div class="form-row d-grid gap-3">
+                <div class="form-group position-relative d-flex flex-column">
+                  <label for="phone" class="fw-bold">رقم الهاتف *</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+20 1XX XXX XXXX" class="w-100">
+                  <div class="error-msg fw-bold" id="phoneError">يرجى إدخال رقم هاتف مصري صحيح</div>
+                </div>
+                <div class="form-group position-relative d-flex flex-column">
+                  <label for="service" class="fw-bold">نوع المشروع *</label>
+                  <select id="service" name="service" class="w-100">
+                    <option value="">اختر نوع المشروع</option>
+                    <option value="mobile">تطبيق موبايل</option>
+                    <option value="website">موقع إلكتروني</option>
+                    <option value="ecommerce">متجر إلكتروني</option>
+                    <option value="dashboard">لوحة تحكم</option>
+                    <option value="other">أخرى</option>
+                  </select>
+                  <div class="error-msg fw-bold" id="serviceError">يرجى اختيار نوع المشروع</div>
+                </div>
+              </div>
 
-        <div class="contact-social">
-          <a href="#" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-          <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <div class="form-group position-relative d-flex flex-column">
+                <label for="message" class="fw-bold">تفاصيل المشروع *</label>
+                <textarea id="message" name="message" class="w-100"
+                  placeholder="اشرح لنا فكرة مشروعك، ما هي أهدافك？ ما الميزانية التقريبية？ ما الجدول الزمني المتوقع？"></textarea>
+                <div class="error-msg fw-bold" id="messageError">يرجى شرح تفاصيل المشروع (10 أحرف على الأقل)</div>
+              </div>
+
+              <button type="button" class="btn-submit w-100 mt-2 fs-6 fw-bold border-0 d-flex align-items-center justify-content-center gap-2" onclick="submitForm()">
+                <i class="bi bi-send-fill"></i>
+                إرسال الرسالة
+              </button>
+            </div>
+
+            <div id="formSuccess" class="text-center">
+              <i class="bi bi-check-circle-fill mb-3"></i>
+              <h3 class="fs-4 mb-2">تم إرسال رسالتك بنجاح!</h3>
+              <p>شكراً لتواصلك معنا. سيردّ عليك فريقنا خلال 24 ساعة.</p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- Contact Form Card -->
-      <div class="reveal">
-        <div class="contact-form-wrap">
-          <h3>أرسل رسالتك</h3>
-
-          <div id="contactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">الاسم الكامل *</label>
-                <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل">
-                <div class="error-msg" id="nameError">يرجى إدخال الاسم (3 أحرف على الأقل)</div>
-              </div>
-              <div class="form-group">
-                <label for="email">البريد الإلكتروني *</label>
-                <input type="email" id="email" name="email" placeholder="example@email.com" dir="ltr">
-                <div class="error-msg" id="emailError">يرجى إدخال بريد إلكتروني صحيح</div>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="phone">رقم الهاتف *</label>
-                <input type="tel" id="phone" name="phone" placeholder="+20 1XX XXX XXXX">
-                <div class="error-msg" id="phoneError">يرجى إدخال رقم هاتف مصري صحيح</div>
-              </div>
-              <div class="form-group">
-                <label for="service">نوع المشروع *</label>
-                <select id="service" name="service">
-                  <option value="">اختر نوع المشروع</option>
-                  <option value="mobile">تطبيق موبايل</option>
-                  <option value="website">موقع إلكتروني</option>
-                  <option value="ecommerce">متجر إلكتروني</option>
-                  <option value="dashboard">لوحة تحكم</option>
-                  <option value="other">أخرى</option>
-                </select>
-                <div class="error-msg" id="serviceError">يرجى اختيار نوع المشروع</div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="message">تفاصيل المشروع *</label>
-              <textarea id="message" name="message"
-                placeholder="اشرح لنا فكرة مشروعك، ما هي أهدافك؟ ما الميزانية التقريبية؟ ما الجدول الزمني المتوقع؟"></textarea>
-              <div class="error-msg" id="messageError">يرجى شرح تفاصيل المشروع (10 أحرف على الأقل)</div>
-            </div>
-
-            <button type="button" class="btn-submit" onclick="submitForm()">
-              <i class="bi bi-send-fill"></i>
-              إرسال الرسالة
-            </button>
-          </div>
-
-          <div id="formSuccess">
-            <i class="bi bi-check-circle-fill"></i>
-            <h3>تم إرسال رسالتك بنجاح!</h3>
-            <p>شكراً لتواصلك معنا. سيردّ عليك فريقنا خلال 24 ساعة.</p>
-          </div>
-        </div>
-      </div>
-    </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="container-fluid">
     <div class="container">
-    <div class="footer-top">
-      <!-- Brand Info -->
-      <div class="footer-brand">
-        <div class="footer-brand-name"><span>مشروعك</span></div>
-        <p>نحن شريكك التقني الموثوق في بناء حضورك الرقمي وتحويل أفكارك إلى مشاريع ناجحة ومستدامة.</p>
-        <div class="footer-brand-social">
-          <a href="#" class="footer-social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-          <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <div class="footer-top row g-5 pb-4">
+        <!-- Brand Info -->
+        <div class="footer-brand col-lg-4 col-md-6">
+          <div class="footer-brand-name fs-4 fst-italic fw-bolder"><span class="fst-normal">مشروعك</span></div>
+          <p>نحن شريكك التقني الموثوق في بناء حضورك الرقمي وتحويل أفكارك إلى مشاريع ناجحة ومستدامة.</p>
+          <div class="footer-brand-social d-flex">
+            <a href="#" class="footer-social-btn text-decoration-none d-flex align-items-center justify-content-center" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="footer-social-btn text-decoration-none d-flex align-items-center justify-content-center" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn text-decoration-none d-flex align-items-center justify-content-center" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-btn text-decoration-none d-flex align-items-center justify-content-center" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col col-lg-2 col-md-6">
+          <h4 class="fw-bolder">روابط سريعة</h4>
+          <ul class="list-unstyled p-0">
+            <li><a href="#hero" class="text-decoration-none d-inline-flex align-items-center gap-2"><i class="bi bi-house-fill"></i> الرئيسية</a></li>
+            <li><a href="#services" class="text-decoration-none d-inline-flex align-items-center gap-2"><i class="bi bi-stars"></i> خدماتنا</a></li>
+            <li><a href="#how" class="text-decoration-none d-inline-flex align-items-center gap-2"><i class="bi bi-diagram-3-fill"></i> كيف نعمل</a></li>
+            <li><a href="#portfolio" class="text-decoration-none d-inline-flex align-items-center gap-2"><i class="bi bi-grid-fill"></i> أعمالنا</a></li>
+            <li><a href="#pricing" class="text-decoration-none d-inline-flex align-items-center gap-2"><i class="bi bi-tags-fill"></i> الأسعار</a></li>
+            <li><a href="#testimonials" class="text-decoration-none d-inline-flex align-items-center gap-2"><i class="bi bi-chat-quote-fill"></i> آراء العملاء</a></li>
+            <li><a href="#faq" class="text-decoration-none d-inline-flex align-items-center gap-2"><i class="bi bi-question-circle-fill"></i> الأسئلة الشائعة</a></li>
+            <li><a href="#contact" class="text-decoration-none d-inline-flex align-items-center gap-2"><i class="bi bi-envelope-fill"></i> تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Links -->
+        <div class="footer-col col-lg-3 col-md-6">
+          <h4>خدماتنا</h4>
+          <ul class="list-unstyled p-0">
+            <li><a href="#services" class="text-decoration-none d-inline-flex align-items-center gap-2"><i class="bi bi-phone-fill"></i> تطبيقات الموبايل</a></li>
+            <li><a href="#services" class="text-decoration-none d-inline-flex align-items-center gap-2"><i class="bi bi-palette-fill"></i> تصميم واجهات المستخدم</a></li>
+            <li><a href="#services" class="text-decoration-none d-inline-flex align-items-center gap-2"><i class="bi bi-bar-chart-fill"></i> تحليل البيانات</a></li>
+            <li><a href="#services" class="text-decoration-none d-inline-flex align-items-center gap-2"><i class="bi bi-globe2"></i> المواقع الإلكترونية</a></li>
+            <li><a href="#services" class="text-decoration-none d-inline-flex align-items-center gap-2"><i class="bi bi-cart-fill"></i> التجارة الإلكترونية</a></li>
+            <li><a href="#services" class="text-decoration-none d-inline-flex align-items-center gap-2"><i class="bi bi-cpu-fill"></i> الذكاء الاصطناعي</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col col-lg-3 col-md-6">
+          <h4>تواصل معنا</h4>
+          <ul class="list-unstyled p-0">
+            <li class="footer-contact-item d-flex align-items-center"><i class="bi bi-telephone-fill fs-6 flex-shrink-0"></i> +20 10 0000 0000</li>
+            <li class="footer-contact-item d-flex align-items-center"><i class="bi bi-envelope-fill fs-6 flex-shrink-0"></i> hello@mashrouk.com</li>
+            <li class="footer-contact-item d-flex align-items-center"><i class="bi bi-geo-alt-fill fs-6 flex-shrink-0"></i> الزمالك، القاهرة، مصر</li>
+            <li class="footer-contact-item d-flex align-items-center"><i class="bi bi-clock-fill fs-6 flex-shrink-0"></i> السبت – الخميس: 9ص – 10م</li>
+          </ul>
         </div>
       </div>
-
-      <!-- Quick Links -->
-      <div class="footer-col">
-        <h4>روابط سريعة</h4>
-        <ul>
-          <li><a href="#hero"><i class="bi bi-house-fill"></i> الرئيسية</a></li>
-          <li><a href="#services"><i class="bi bi-stars"></i> خدماتنا</a></li>
-          <li><a href="#how"><i class="bi bi-diagram-3-fill"></i> كيف نعمل</a></li>
-          <li><a href="#portfolio"><i class="bi bi-grid-fill"></i> أعمالنا</a></li>
-          <li><a href="#pricing"><i class="bi bi-tags-fill"></i> الأسعار</a></li>
-          <li><a href="#testimonials"><i class="bi bi-chat-quote-fill"></i> آراء العملاء</a></li>
-          <li><a href="#faq"><i class="bi bi-question-circle-fill"></i> الأسئلة الشائعة</a></li>
-          <li><a href="#contact"><i class="bi bi-envelope-fill"></i> تواصل معنا</a></li>
-        </ul>
+      <div class="footer-bottom text-center">
+        <p class="footer-copy fst-italic fw-bold">© 2026 <span>مشروعك</span> — جميع الحقوق محفوظة.</p>
       </div>
-
-      <!-- Services Links -->
-      <div class="footer-col">
-        <h4>خدماتنا</h4>
-        <ul>
-          <li><a href="#services"><i class="bi bi-phone-fill"></i> تطبيقات الموبايل</a></li>
-          <li><a href="#services"><i class="bi bi-palette-fill"></i> تصميم واجهات المستخدم</a></li>
-          <li><a href="#services"><i class="bi bi-bar-chart-fill"></i> تحليل البيانات</a></li>
-          <li><a href="#services"><i class="bi bi-globe2"></i> المواقع الإلكترونية</a></li>
-          <li><a href="#services"><i class="bi bi-cart-fill"></i> التجارة الإلكترونية</a></li>
-          <li><a href="#services"><i class="bi bi-cpu-fill"></i> الذكاء الاصطناعي</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Info -->
-      <div class="footer-col">
-        <h4>تواصل معنا</h4>
-        <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i> +20 10 0000 0000</div>
-        <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i> hello@mashrouk.com</div>
-        <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i> الزمالك، القاهرة، مصر</div>
-        <div class="footer-contact-item"><i class="bi bi-clock-fill"></i> السبت – الخميس: 9ص – 10م</div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2026 <span>مشروعك</span> — جميع الحقوق محفوظة.</p>
-    </div>
     </div>
   </footer>
 
