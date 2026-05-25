@@ -12,13 +12,13 @@ const portfolioItems = [
 const portfolioGrid = document.getElementById('portfolioGrid');
 portfolioItems.forEach(item => {
   portfolioGrid.innerHTML += `
-    <div class="portfolio-card reveal">
-      <div class="ph-icon ${item.bg}">
+    <div class="portfolio-card reveal position-relative overflow-hidden">
+      <div class="ph-icon w-100 d-flex align-items-center justify-content-center ${item.bg}">
         <i class="bi ${item.icon}" style="font-size:56px;color:${item.color}"></i>
       </div>
-      <div class="portfolio-overlay">
-        <div class="portfolio-tag">${item.tag}</div>
-        <div class="portfolio-name">${item.name}</div>
+      <div class="portfolio-overlay position-absolute d-flex flex-column justify-content-end">
+        <div class="portfolio-tag fw-bold text-uppercase">${item.tag}</div>
+        <div class="portfolio-name fs-6 fw-bolder">${item.name}</div>
       </div>
     </div>`;
 });
@@ -41,11 +41,14 @@ testimonials.forEach(t => {
   const starsHtml = '★'.repeat(t.stars) + (t.stars < 5 ? '☆'.repeat(5 - t.stars) : '');
   carousel.innerHTML += `
     <div class="testimonial-card">
-      <div class="t-top"><div class="t-stars">${starsHtml}</div><div class="t-quote-mark">"</div></div>
-      <p class="t-text">${t.text}</p>
-      <div class="t-author">
-        <div class="t-avatar ${t.avatarClass}">${t.avatar}</div>
-        <div><div class="t-name">${t.name}</div><div class="t-role">${t.role}</div></div>
+      <div class="t-top d-flex justify-content-between align-items-start mb-3">
+        <div class="t-stars">${starsHtml}</div>
+        <div class="t-quote-mark">"</div>
+      </div>
+      <p class="t-text fst-italic mb-4">${t.text}</p>
+      <div class="t-author pt-3 d-flex align-items-center">
+        <div class="t-avatar rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 fw-bolder ${t.avatarClass}">${t.avatar}</div>
+        <div><div class="t-name fw-bold">${t.name}</div><div class="t-role">${t.role}</div></div>
       </div>
     </div>`;
 });
