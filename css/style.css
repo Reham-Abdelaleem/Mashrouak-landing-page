@@ -62,37 +62,20 @@ body::before {
 
 /* NAVIGATION */
 nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     z-index: 100;
     background: rgba(255, 255, 255, 0.95);
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid rgba(211, 47, 47, 0.12);
-    padding: 0;
     height: 72px;
     transition: box-shadow .3s;
 }
 
-nav .container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .nav-actions {
-    display: flex;
-    align-items: center;
     gap: 12px;
-    flex-shrink: 0;
 }
 
 .nav-actions .nav-cta {
-    display: inline-flex;
-    align-items: center;
     gap: 6px;
 }
 
@@ -108,27 +91,16 @@ nav.scrolled {
 
 .nav-logo img {
     height: 48px;
-    flex-shrink: 0;
 }
 
 .nav-links {
-    display: flex;
     gap: .9rem;
-    list-style: none;
-    align-items: center;
-    flex-wrap: nowrap;
 }
 
 .nav-links a {
-    text-decoration: none;
     font-size: 13px;
-    font-weight: 600;
     color: var(--text-mid);
     transition: color .2s;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
     white-space: nowrap;
 }
 
@@ -338,8 +310,8 @@ nav.scrolled {
 }
 
 .card-float-1 {
-    bottom: -18px;
-    left: -24px;
+    bottom: 16px;
+    left: -16px;
 }
 
 .card-float-1 i{
@@ -348,8 +320,8 @@ nav.scrolled {
 }
 
 .card-float-2 {
-    top: -14px;
-    left: -20px;
+    top: 16px;
+    left: -16px;
     animation-delay: 1.2s;
 }
 .card-float-2 i{
@@ -1006,18 +978,18 @@ nav.scrolled {
 /* Owl custom nav/dots */
 .owl-testimonials {
     position: relative;
-    padding: 0 34px;
+    padding: 0 56px;
 }
 
 .owl-testimonials .owl-nav {
     position: absolute;
     top: 50%;
     width: 100%;
+    left: 0;
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
     pointer-events: none;
-    padding: 0 -10px;
     box-sizing: border-box;
 }
 
@@ -1047,11 +1019,11 @@ nav.scrolled {
 }
 
 .owl-testimonials .owl-nav .owl-prev {
-    right: -10px;
+    right: 0;
 }
 
 .owl-testimonials .owl-nav .owl-next {
-    left: -10px;
+    left: 0;
 }
 
 .owl-testimonials .owl-dots {
@@ -1513,9 +1485,7 @@ footer {
     height: 46px;
     background: var(--red);
     color: #fff;
-    border: none;
     cursor: pointer;
-
     box-shadow: 0 6px 20px rgba(211, 47, 47, 0.4);
     opacity: 0;
     transform: translateY(20px);
@@ -1643,7 +1613,6 @@ footer {
 
 /* MEDIA QUERIES - RESPONSIVE DESIGN */
 @media(max-width:1024px) {
-
     .services-grid,
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr)
@@ -1691,6 +1660,15 @@ footer {
 
     .hamburger {
         display: flex
+    }
+
+    .hero-card-stack {
+        overflow: hidden;
+    }
+
+    .card-float-1,
+    .card-float-2 {
+        display: none;
     }
 }
 
