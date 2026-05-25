@@ -36,19 +36,26 @@
 
   <!-- NAVIGATION BAR -->
   <nav id="navbar">
-    <div class="nav-logo"><img src="images/logo.jpg" alt="Mashrouk"></div>
-    <ul class="nav-links">
-      <li><a href="#services"><i class="bi bi-stars"></i> خدماتنا</a></li>
-      <li><a href="#how"><i class="bi bi-diagram-3-fill"></i> كيف نعمل</a></li>
-      <li><a href="#portfolio"><i class="bi bi-grid-fill"></i> أعمالنا</a></li>
-      <li><a href="#pricing"><i class="bi bi-tags-fill"></i> الأسعار</a></li>
-      <li><a href="#testimonials"><i class="bi bi-chat-quote-fill"></i> آراء العملاء</a></li>
-      <li><a href="#faq"><i class="bi bi-question-circle-fill"></i> الأسئلة الشائعة</a></li>
-      <li><a href="#contact"><i class="bi bi-envelope-fill"></i> تواصل معنا</a></li>
-      <li><a href="#cta-band" class="nav-cta"><i class="bi bi-rocket-takeoff-fill"></i> ابدأ مشروعك</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger" role="button" aria-label="Menu">
-      <span></span><span></span><span></span>
+    <div class="container">
+      <div class="nav-logo"><img src="images/logo.jpg" alt="Mashrouk"></div>
+      <ul class="nav-links m-0 p-0">
+        <li><a href="#services"><i class="bi bi-stars"></i> خدماتنا</a></li>
+        <li><a href="#how"><i class="bi bi-diagram-3-fill"></i> كيف نعمل</a></li>
+        <li><a href="#portfolio"><i class="bi bi-grid-fill"></i> أعمالنا</a></li>
+        <li><a href="#pricing"><i class="bi bi-tags-fill"></i> الأسعار</a></li>
+        <li><a href="#testimonials"><i class="bi bi-chat-quote-fill"></i> آراء العملاء</a></li>
+        <li><a href="#faq"><i class="bi bi-question-circle-fill"></i> الأسئلة الشائعة</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope-fill"></i> تواصل معنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-primary nav-cta border-0 fw-bold" onclick="window.location.href='#cta-band'">
+          <i class="bi bi-rocket-takeoff-fill"></i>
+          ابدأ مشروعك
+        </button>
+        <div class="hamburger" id="hamburger" role="button" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
     </div>
   </nav>
 
@@ -67,56 +74,116 @@
   </div>
 
   <!-- HERO SECTION -->
-  <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-bg-blob blob-1"></div>
-    <div class="hero-bg-blob blob-2"></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <div class="hero-badge-dot"></div> نحن هنا لتحقيق أحلامك الرقمية
-      </div>
-      <h1 class="hero-title">حوّل فكرتك إلى <span>مشروع ناجح</span></h1>
-      <p class="hero-sub">نحن فريق متخصص في بناء تطبيقات وحلول رقمية مبتكرة تساعدك على الوصول إلى أهدافك بسرعة وكفاءة
-        عالية.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">ابدأ مشروعك الآن <i class="bi bi-arrow-left"></i></a>
-        <a href="#how" class="btn-secondary">تعرف على خدماتنا <i class="bi bi-grid-fill"></i></a>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="hero-card-stack">
-        <div class="hero-card hero-card-main">
-          <div class="hero-img-wrap">
-            <img src="images/hero-sec-bg.jfif" alt="Mashrouk">
-            <div class="hero-img-overlay"></div>
-            <div class="hero-img-badge">
-              <div class="hero-img-badge-dot"></div> فريقنا يعمل الآن
-            </div>
-          </div>
-          <div class="hero-card-bottom">
-            <div class="hero-card-label">عملاء سعداء بخدماتنا</div>
-            <div class="hero-card-value">+200 مشروع ناجح</div>
-              <div class="hero-card-change">
-    <i class="bi bi-graph-up-arrow"></i>
-    نمو مستمر في رضا العملاء
-  </div>
-          </div>
-        </div>
-        <div class="hero-card-float card-float-1 z-3">
-          <i class="bi bi-lightning-charge-fill" style="color:#6366F1;font-size:18px"></i>
-          <span>تنفيذ سريع بجودة عالية</span>
-        </div>
+<section id="hero"
+  class="hero-section position-relative overflow-hidden container-fluid py-5">
 
-        <div class="hero-card-float card-float-2 z-3">
-          <i class="bi bi-chat-dots-fill" style="color:#0EA5E9;font-size:18px"></i>
-          <span>دعم متواصل 24/7</span>
+  <!-- Background -->
+  <div class="hero-bg position-absolute z-0"></div>
+  <div class="hero-bg-blob blob-1 position-absolute rounded-circle"></div>
+  <div class="hero-bg-blob blob-2 position-absolute rounded-circle"></div>
+
+  <!-- Content Container -->
+  <div class="container position-relative z-1">
+    <div class="row align-items-center min-vh-100 g-5">
+
+      <!-- Left Content -->
+      <div class="col-lg-6">
+        <div class="hero-content">
+
+          <div class="hero-badge d-inline-flex align-items-center gap-2 mb-4 fw-bold">
+            <div class="hero-badge-dot rounded-circle"></div>
+            نحن هنا لتحقيق أحلامك الرقمية
+          </div>
+
+          <h1 class="hero-title fw-bolder">
+            حوّل فكرتك إلى <span>مشروع ناجح</span>
+          </h1>
+
+          <p class="hero-sub">
+            نحن فريق متخصص في بناء تطبيقات وحلول رقمية مبتكرة تساعدك
+            على الوصول إلى أهدافك بسرعة وكفاءة عالية.
+          </p>
+
+          <div class="hero-actions d-flex flex-wrap align-items-center gap-3">
+            <a href="#contact"
+              class="btn-primary text-decoration-none fs-6 fw-bold d-inline-flex align-items-center">
+              ابدأ مشروعك الآن
+              <i class="bi bi-arrow-left ms-2"></i>
+            </a>
+
+            <a href="#how"
+              class="btn-secondary text-decoration-none fs-6 fw-bold d-inline-flex align-items-center">
+              تعرف على خدماتنا
+              <i class="bi bi-grid-fill ms-2"></i>
+            </a>
+          </div>
+
         </div>
       </div>
+
+      <!-- Right Visual -->
+      <div class="col-lg-6">
+        <div class="hero-visual position-relative d-flex align-items-center justify-content-center">
+
+          <div class="hero-card-stack w-100 position-relative">
+
+            <!-- Main Card -->
+            <div class="hero-card hero-card-main overflow-hidden position-relative z-2">
+
+              <div class="hero-img-wrap w-100 position-relative overflow-hidden">
+                <img src="images/hero-sec-bg.jfif"
+                  alt="Mashrouk"
+                  class="w-100 h-100 object-fit-cover d-block">
+
+                <div class="hero-img-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+                <div class="hero-img-badge position-absolute fw-bold d-flex align-items-center">
+                  <div class="hero-img-badge-dot rounded-circle"></div>
+                  فريقنا يعمل الآن
+                </div>
+              </div>
+
+              <div class="hero-card-bottom">
+                <p class="hero-card-label mb-1">
+                  عملاء سعداء بخدماتنا
+                </p>
+
+                <h4 class="hero-card-value fw-bolder">
+                  +200 مشروع ناجح
+                </h4>
+
+                <p class="hero-card-change mb-0 fw-bolder">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  نمو مستمر في رضا العملاء
+                </p>
+              </div>
+            </div>
+
+            <!-- Floating Card 1 -->
+            <div
+              class="hero-card-float card-float-1 position-absolute z-3 fw-semibold d-flex align-items-center">
+              <i class="bi bi-lightning-charge-fill me-2"></i>
+              <span>تنفيذ سريع بجودة عالية</span>
+            </div>
+
+            <!-- Floating Card 2 -->
+            <div
+              class="hero-card-float card-float-2 position-absolute z-3 fw-semibold d-flex align-items-center">
+              <i class="bi bi-chat-dots-fill me-2"></i>
+              <span>دعم متواصل 24/7</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- STATS -->
-  <section id="stats">
+  <section id="stats" class="position-relative container-fluid">
+    <div class="container">
     <div class="stats-grid reveal">
       <div class="stat-item">
         <span class="stat-num rate" data-target="4.9" data-prefix="★ " data-suffix="">★ 4.9</span>
@@ -135,10 +202,12 @@
         <span class="stat-label">مشروع ناجح</span>
       </div>
     </div>
+    </div>
   </section>
 
   <!-- BRANDS SECTION -->
-  <section id="brands">
+  <section id="brands" class="container-fluid">
+    <div class="container">
     <p class="brands-title">يثق بنا أكثر من 150 عميل حول العالم</p>
     <div class="brands-track">
       <div class="brand-pill"><i class="bi bi-bank2"></i> بنك الأهلي</div>
@@ -149,10 +218,12 @@
       <div class="brand-pill"><i class="bi bi-box-seam-fill"></i> أرامكس</div>
       <div class="brand-pill"><i class="bi bi-wifi"></i> أورنج مصر</div>
     </div>
+    </div>
   </section>
 
   <!-- SERVICES SECTION -->
-  <section id="services">
+  <section id="services" class="container-fluid">
+    <div class="container">
     <div class="section-header reveal">
       <span class="section-tag">خدماتنا</span>
       <h2 class="section-title">كل ما تحتاجه لمشروعك الرقمي</h2>
@@ -196,10 +267,12 @@
           href="#cta-band" class="service-link">اعرف أكثر <i class="bi bi-arrow-left"></i></a>
       </div>
     </div>
+    </div>
   </section>
 
   <!-- HOW IT WORKS SECTION -->
-  <section id="how">
+  <section id="how" class="container-fluid">
+    <div class="container">
     <div class="section-header reveal">
       <span class="section-tag">كيف نعمل</span>
       <h2 class="section-title">من الفكرة إلى الإطلاق في 4 خطوات</h2>
@@ -227,10 +300,12 @@
         <p class="step-desc">نطلق مشروعك ونوفر دعماً فنياً مستمراً لضمان نموه وتطوره الدائم.</p>
       </div>
     </div>
+    </div>
   </section>
 
   <!-- PORTFOLIO SECTION -->
-  <section id="portfolio">
+  <section id="portfolio" class="container-fluid">
+    <div class="container">
     <div class="section-header reveal">
       <span class="section-tag">أعمالنا</span>
       <h2 class="section-title">مشاريع أنجزناها بنجاح</h2>
@@ -239,10 +314,12 @@
     <div class="portfolio-grid" id="portfolioGrid">
       <!-- Items Rendered by JavaScript -->
     </div>
+    </div>
   </section>
 
   <!-- PRICING SECTION -->
-  <section id="pricing">
+  <section id="pricing" class="container-fluid">
+    <div class="container">
     <div class="section-header reveal">
       <span class="section-tag">الأسعار</span>
       <h2 class="section-title">باقات تناسب جميع المشاريع</h2>
@@ -293,10 +370,12 @@
         <a href="#contact" class="btn-outline">ابدأ الآن</a>
       </div>
     </div>
+    </div>
   </section>
 
   <!-- TESTIMONIALS SECTION -->
-  <section id="testimonials">
+  <section id="testimonials" class="container-fluid">
+    <div class="container">
     <div class="section-header reveal">
       <span class="section-tag">آراء العملاء</span>
       <h2 class="section-title">ماذا يقول عملاؤنا؟</h2>
@@ -305,10 +384,12 @@
     <div class="owl-carousel owl-testimonials" id="testimonialsCarousel">
       <!-- Items Rendered by JavaScript -->
     </div>
+    </div>
   </section>
 
   <!-- FAQ SECTION -->
-  <section id="faq">
+  <section id="faq" class="container-fluid">
+    <div class="container">
     <div class="section-header reveal">
       <span class="section-tag">الأسئلة الشائعة</span>
       <h2 class="section-title">إجابات لأهم أسئلتك</h2>
@@ -365,10 +446,12 @@
         </div>
       </div>
     </div>
+    </div>
   </section>
 
   <!-- CALL TO ACTION BAND -->
-  <div id="cta-band">
+  <div id="cta-band" class="container-fluid">
+    <div class="container">
     <p class="cta-label">هل أنت مستعد؟</p>
     <h2 class="cta-title">حوّل فكرتك إلى مشروع ناجح اليوم</h2>
     <p class="cta-sub">استشارة مجانية تماماً · لا التزامات · نتائج مضمونة</p>
@@ -378,10 +461,12 @@
       <span class="cta-pill"><i class="bi bi-check-lg"></i> عرض سعر مفصّل</span>
     </div>
     <a href="#contact" class="btn-white">ابدأ مشروعك الآن <i class="bi bi-arrow-left"></i></a>
+    </div>
   </div>
 
   <!-- CONTACT SECTION -->
-  <section id="contact">
+  <section id="contact" class="container-fluid">
+    <div class="container">
     <div class="section-header reveal">
       <span class="section-tag">تواصل معنا</span>
       <h2 class="section-title">لنصنع معاً <span style="color:var(--red)">شيئاً</span> استثنائياً</h2>
@@ -493,10 +578,12 @@
         </div>
       </div>
     </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="container-fluid">
+    <div class="container">
     <div class="footer-top">
       <!-- Brand Info -->
       <div class="footer-brand">
@@ -547,6 +634,7 @@
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">© 2026 <span>مشروعك</span> — جميع الحقوق محفوظة.</p>
+    </div>
     </div>
   </footer>
 
