@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 // --- PORTFOLIO DATA ---
 const portfolioItems = [
   { icon: 'bi-phone-fill',      color: 'var(--red)',  bg: 'ph-1', tag: 'تطبيق موبايل',      name: 'تطبيق توصيل الطلبات - سريع' },
@@ -83,15 +85,25 @@ window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 20);
   backTop.classList.toggle('show', window.scrollY > 400);
 });
-backTop.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-// Mobile Menu Toggle
-document.getElementById('hamburger').addEventListener('click', () => {
-  document.getElementById('mobileMenu').classList.toggle('open');
+// ── Mobile Menu Toggle ──
+const hamburger  = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+  const isOpen = mobileMenu.classList.toggle('open');
+  hamburger.classList.toggle('active', isOpen);
 });
-function closeMob(){ document.getElementById('mobileMenu').classList.remove('open'); }
 
-// ── COUNTER ANIMATION (L'Artisan pattern) ──
+// Close the menu when clicking on any link
+function closeMob() {
+  mobileMenu.classList.remove('open');
+  hamburger.classList.remove('active');
+}
+mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMob));
+
+// ── COUNTER ANIMATION ──
 function animateCounter(el) {
   const target    = parseFloat(el.dataset.target);
   const prefix    = el.dataset.prefix  || '';
@@ -114,14 +126,12 @@ const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
       setTimeout(() => entry.target.classList.add('visible'), 80 * (i % 4));
-      // Trigger counters if present in revealed element
       entry.target.querySelectorAll('[data-target]').forEach(animateCounter);
       revealObserver.unobserve(entry.target);
     }
   });
 }, { threshold: 0.12 });
 
-// Observe reveal elements
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 document.querySelectorAll('#portfolioGrid .reveal').forEach(el => revealObserver.observe(el));
 
@@ -133,7 +143,6 @@ document.querySelectorAll('.faq-q').forEach(btn => {
     const icon = item.querySelector('.faq-icon i');
     const isOpen = item.classList.contains('open');
 
-    // Close all open items
     document.querySelectorAll('.faq-item.open').forEach(i => {
       i.classList.remove('open');
       i.querySelector('.faq-a').style.maxHeight = null;
@@ -149,24 +158,14 @@ document.querySelectorAll('.faq-q').forEach(btn => {
 });
 
 /* --- CONTACT FORM LOGIC --- */
-
-/**
- * Validate email format
- */
 function validateEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-/**
- * Validate Egyptian phone number format
- */
 function validatePhone(phone) {
   return /^(?:\+20|20)?0?1[0125]\d{8}$/.test(phone.replace(/\s/g, ''));
 }
 
-/**
- * Helper to set field validity and show/hide errors
- */
 const setValidity = (el, isValid) => {
   if (isValid) {
     el.classList.remove('is-invalid');
@@ -177,24 +176,20 @@ const setValidity = (el, isValid) => {
   }
 };
 
-/**
- * Handle form submission with detailed validation
- */
-function submitForm() {
+window.submitForm = function() {
   let allValid = true;
 
-  const name = document.getElementById('name');
-  const email = document.getElementById('email');
-  const phone = document.getElementById('phone');
+  const name    = document.getElementById('name');
+  const email   = document.getElementById('email');
+  const phone   = document.getElementById('phone');
   const service = document.getElementById('service');
   const message = document.getElementById('message');
 
-  // Validate all fields
-  if (!setValidity(name, name.value.trim().length >= 3)) allValid = false;
-  if (!setValidity(email, validateEmail(email.value.trim()))) allValid = false;
-  if (!setValidity(phone, validatePhone(phone.value.trim()))) allValid = false;
-  if (!setValidity(service, service.value !== "")) allValid = false;
-  if (!setValidity(message, message.value.trim().length >= 10)) allValid = false;
+  if (!setValidity(name,    name.value.trim().length >= 3))          allValid = false;
+  if (!setValidity(email,   validateEmail(email.value.trim())))       allValid = false;
+  if (!setValidity(phone,   validatePhone(phone.value.trim())))       allValid = false;
+  if (!setValidity(service, service.value !== ""))                    allValid = false;
+  if (!setValidity(message, message.value.trim().length >= 10))       allValid = false;
 
   if (allValid) {
     const contactForm = document.getElementById('contactForm');
@@ -203,15 +198,16 @@ function submitForm() {
     if (formSuccess) formSuccess.style.display = 'block';
     formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
-}
+};
 
-// Real-time validation on blur
 document.querySelectorAll('#contactForm input, #contactForm textarea, #contactForm select').forEach(input => {
   input.addEventListener('blur', () => {
-    if (input.id === 'name') setValidity(input, input.value.trim().length >= 3);
-    if (input.id === 'email') setValidity(input, validateEmail(input.value.trim()));
-    if (input.id === 'phone') setValidity(input, validatePhone(input.value.trim()));
+    if (input.id === 'name')    setValidity(input, input.value.trim().length >= 3);
+    if (input.id === 'email')   setValidity(input, validateEmail(input.value.trim()));
+    if (input.id === 'phone')   setValidity(input, validatePhone(input.value.trim()));
     if (input.id === 'service') setValidity(input, input.value !== "");
     if (input.id === 'message') setValidity(input, input.value.trim().length >= 10);
   });
+});
+
 });
