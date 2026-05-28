@@ -1,5 +1,80 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+// --- PRICING DATA ---
+const pricingPlans = [
+  {
+    name:     'الباقة الأساسية',
+    price:    '499',
+    period:   'لمدة 3 أشهر',
+    featured: false,
+    badge:    null,
+    features: [
+      { text: 'موقع ويب احترافي (5 صفحات)',    available: true  },
+      { text: 'تصميم متجاوب مع الموبايل',       available: true  },
+      { text: 'استضافة وأمان SSL',              available: true  },
+      { text: 'دعم فني بالبريد الإلكتروني',    available: true  },
+      { text: 'لوحة تحكم مخصصة',               available: false },
+      { text: 'تطبيق موبايل',                   available: false },
+    ],
+  },
+  {
+    name:     'الباقة الاحترافية',
+    price:    '999',
+    period:   'لمدة 6 أشهر',
+    featured: true,
+    badge:    'الأكثر طلباً',
+    features: [
+      { text: 'موقع ويب كامل (غير محدود)',      available: true  },
+      { text: 'لوحة تحكم مخصصة',               available: true  },
+      { text: 'تكامل مع أنظمة الدفع',           available: true  },
+      { text: 'تحليلات وتقارير تفصيلية',        available: true  },
+      { text: 'دعم فني على مدار الساعة',        available: true  },
+      { text: 'تطبيق موبايل',                   available: false },
+    ],
+  },
+  {
+    name:     'الباقة المتكاملة',
+    price:    '1999',
+    period:   'اشتراك سنوي',
+    featured: false,
+    badge:    null,
+    features: [
+      { text: 'كل مميزات الباقة الاحترافية',   available: true },
+      { text: 'تطبيق iOS وأندرويد',             available: true },
+      { text: 'تكامل الذكاء الاصطناعي',        available: true },
+      { text: 'أتمتة العمليات',                 available: true },
+      { text: 'مدير حساب مخصص',                available: true },
+      { text: 'تقارير استراتيجية شهرية',        available: true },
+    ],
+  },
+];
+
+// Render Pricing Cards
+const pricingGrid = document.getElementById('pricingGrid');
+pricingPlans.forEach(plan => {
+  const featuresHTML = plan.features.map(f => `
+    <li class="d-flex align-items-center gap-2">
+      <i class="bi ${f.available ? 'bi-check-circle-fill check' : 'bi-x-circle cross'} fs-6 fw-bolder flex-shrink-0"></i>
+      ${f.text}
+    </li>`).join('');
+
+  const badgeHTML = plan.badge
+    ? `<div class="pricing-badge position-absolute fw-bolder">
+         ${plan.badge} <i class="bi bi-star-fill ms-1" style="color: #FFD700;"></i>
+       </div>`
+    : '';
+
+  pricingGrid.innerHTML += `
+    <div class="pricing-card ${plan.featured ? 'featured' : ''} reveal position-relative">
+      ${badgeHTML}
+      <div class="pricing-plan fw-bold text-uppercase text-center">${plan.name}</div>
+      <div class="pricing-price mb-1 fw-bolder text-center"><sup>$</sup>${plan.price}</div>
+      <div class="pricing-period mb-4 text-center">${plan.period}</div>
+      <ul class="pricing-features list-unstyled">${featuresHTML}</ul>
+      <a href="#contact" class="btn-outline text-decoration-none fw-bold d-inline-flex align-items-center justify-content-center gap-2 w-100">ابدأ الآن</a>
+    </div>`;
+});
+
 // --- PORTFOLIO DATA ---
 const portfolioItems = [
   { icon: 'bi-phone-fill',      color: 'var(--red)',  bg: 'ph-1', tag: 'تطبيق موبايل',      name: 'تطبيق توصيل الطلبات - سريع' },
@@ -207,6 +282,25 @@ document.querySelectorAll('#contactForm input, #contactForm textarea, #contactFo
     if (input.id === 'phone')   setValidity(input, validatePhone(input.value.trim()));
     if (input.id === 'service') setValidity(input, input.value !== "");
     if (input.id === 'message') setValidity(input, input.value.trim().length >= 10);
+  });
+});
+
+// ── ACTIVE NAV LINK on scroll ──────────────────────────────
+const sections  = document.querySelectorAll('section[id]');
+const navLinks  = document.querySelectorAll('.nav-links a[href^="#"]');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(sec => {
+    if (window.scrollY >= sec.offsetTop - 120) {
+      current = sec.getAttribute('id');
+    }
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('active');
+    }
   });
 });
 
